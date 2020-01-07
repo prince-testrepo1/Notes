@@ -1,0 +1,5 @@
+-- incantations	:	a series of words said as a magic spell or charm.
+		From:	but the Git commands will still feel like magical incantations.
+		
+-- parable	:	A parable is a succinct, didactic story, in prose or verse, that illustrates one or more instructive lessons or principles. It differs from a fable in that fables employ animals, plants, inanimate objects, or forces of nature as characters, whereas parables have human characters.
+		From:	The following parable will take you on a journey through the creation of a Git-like system from the ground up.
