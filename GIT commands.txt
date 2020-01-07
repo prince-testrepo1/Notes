@@ -1,0 +1,67 @@
+git init
+git remote add testRepoRemote https://github.com/prince-testrepo1/testrepo.git
+git fetch --all
+git checkout branch1
+git status
+git add file1branch1
+git commit -m "added one line to branch from local"
+git push
+
+==================================================================================================================================================
+//before pushing to remote		*****************************************************************************************
+git pull		//Directly fetch and merge updates from remote. If conflict; pull fails but tells the difference. open the files make your changes what to keep what not to.
+git add .		// stage the changes
+git commit -m "resolved merge conflict"		//commit the changes
+git push							// send all the changes to remote
+
+==================================================================================================================================================
+//deleting branch		*****************************************************************************************
+local branches:
+git branch -d <branch name>
+
+remote branches from local:
+git push <remote repo name> --delete <remote branch name>
+
+
+//Recover deleted file
+https://www.quora.com/How-can-I-recover-a-file-I-deleted-in-my-local-repo-from-the-remote-repo-in-Git
+The local Git repository on your disk contains the full history of your project. This means you have a complete "backup" of everything already available - no need to resort to the "remote" repository when you want to look at historic data or restore deleted stuff. To restore a deleted file...
+
+(1) If you haven't committed the deletion, yet...
+
+In that case, you can simply run the following command to restore it:
+
+git checkout HEAD <filename>
+(2) If you *have* already committed the deletion and know when it happened...
+
+In that case, you'll want to restore the file from the commit before the deletion happened. You can do that by providing the hash of when the deletion happened, appending it with "~1":
+
+git checkout <commit-hash>~1 -- error.html
+(3) You you don't remember when the deletion happened...
+
+In that case, we'll have to find that commit:
+
+git rev-list -n 1 HEAD -- <filename>
+...and then perform the command from number (2) above to restore the file.
+
+—
+
+If you're using a Git client like "Tower", you can simply search for the file in the commit history - and then restore it from there.
+
+==================================================================================================================================================
+==================================================================================================================================================
+==================================================================================================================================================
+==================================================================================================================================================
+==================================================================================================================================================
+==================================================================================================================================================
+==================================================================================================================================================
+==================================================================================================================================================
+==================================================================================================================================================
+==================================================================================================================================================
+==================================================================================================================================================
+==================================================================================================================================================
+==================================================================================================================================================
+==================================================================================================================================================
+==================================================================================================================================================
+==================================================================================================================================================
+==================================================================================================================================================
