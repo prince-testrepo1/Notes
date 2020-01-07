@@ -22,7 +22,7 @@ git branch -d <branch name>
 remote branches from local:
 git push <remote repo name> --delete <remote branch name>
 
-
+==================================================================================================================================================
 //Recover deleted file
 https://www.quora.com/How-can-I-recover-a-file-I-deleted-in-my-local-repo-from-the-remote-repo-in-Git
 The local Git repository on your disk contains the full history of your project. This means you have a complete "backup" of everything already available - no need to resort to the "remote" repository when you want to look at historic data or restore deleted stuff. To restore a deleted file...
