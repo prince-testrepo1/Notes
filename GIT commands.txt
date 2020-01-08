@@ -24,6 +24,32 @@ git branch -a	// shows all branches
 
 git log		//shows commit hash, author, date and message
 git log --oneline --decorate		//Shows commit and messages
+git log -p or --patch		//shows the difference (the patch output) introduced in each commit.
+git log -p -2		//Above with limit the number of log entries displayed, such as using -2 to show only the last two entries.
+git log --stat		//prints below each commit entry a list of modified files, how many files were changed, and how many lines in those files were added and removed. It also puts a summary of the information at the end.
+
+--pretty
+git log --pretty=oneline
+git log --pretty=format:"%h - %an, %ar : %s"
+	Useful options for git log --pretty=format lists some of the more useful options that format takes.	
+	Option		Description of Output
+	%H	__________ Commit hash
+	%h	__________ Abbreviated commit hash
+	%T	__________ Tree hash
+	%t	__________ Abbreviated tree hash
+	%P	__________ Parent hashes
+	%p	__________ Abbreviated parent hashes
+	%an	__________ Author name
+	%ae	__________ Author email
+	%ad	__________ Author date (format respects the --date=option)
+	%ar	__________ Author date, relative
+	%cn	__________ Committer name
+	%ce	__________ Committer email
+	%cd	__________ Committer date
+	%cr	__________ Committer date, relative
+	%s	__________ Subject
+
+
 ==================================================================================================================================================
 //deleting branch		*****************************************************************************************
 local branches:
