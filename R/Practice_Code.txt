@@ -1,0 +1,198 @@
+#log(sqrt(100),10)
+
+#a <- 2^2
+#a
+#class(women)
+#str(women)
+#str(a)
+#head(women)
+#women$height
+#print("--------------------------------------------------------------------------")
+
+
+#class(1)
+#class(1L)
+#levels(women$height)
+
+#x <- factor(c("single", "married", "single", "married"))
+#print("--------------------")
+#x[3]
+#x[c(2, 4)]     # access 2nd and 4th element
+
+#x[-1]          # access all but 1st element
+#x[c(TRUE, FALSE, FALSE, TRUE)]  # using logical vector
+#print("x[3] : " , x[3] )
+#x <- factor(c("single", "married", "married", "single"), levels = c("single", "married", "divorced"))
+
+#str(x)
+
+#print("--------------------------------------------------------------------------")
+#x <- c(0, 1 ,2, 6, 4)
+#x
+#x <- c(x, 5)
+#x
+#y <- c(11,12,13,14)
+#y
+#z <- c(x,y)
+#z
+#z[-1:-3]
+#typeof(x)
+#print("--------------------------------------------------------------------------")
+#?factor
+
+
+print("--------------------------------------------------------------------------")
+# Create the data frame.
+emp.data <- data.frame(
+   emp_id = c (1:5), 
+   emp_name = c("Rick","Dan","Michelle","Ryan","Gary"),
+   salary = c(623.3,515.2,611.0,729.0,843.25), 
+   
+   start_date = as.Date(c("2012-01-01", "2013-09-23", "2014-11-15", "2014-05-11",
+      "2015-03-27")),
+   stringsAsFactors = FALSE
+)
+# Print the data frame.			
+#print(emp.data) 
+
+#str(emp.data)
+
+#names(emp.data) <- c("Emp_id", "Emp_name", "Salary", "Start_Date")
+emp.data <- data.frame(Emp_id=emp_id, Emp_name=emp_name, Salary=salary, Start_Date=start_date)
+
+print("--------------------------------------------------------------------------")
+summary(emp.data)
+print("--------------------------------------------------------------------------")
+
+
+#log(sqrt(100),10)
+
+#a <- 2^2
+#a
+#class(women)
+#str(women)
+#str(a)
+#head(women)
+#women$height
+#print("--------------------------------------------------------------------------")
+
+
+#class(1)
+#class(1L)
+#levels(women$height)
+
+#x <- factor(c("single", "married", "single", "married"))
+#print("--------------------")
+#x[3]
+#x[c(2, 4)]     # access 2nd and 4th element
+
+#x[-1]          # access all but 1st element
+#x[c(TRUE, FALSE, FALSE, TRUE)]  # using logical vector
+#print("x[3] : " , x[3] )
+#x <- factor(c("single", "married", "married", "single"), levels = c("single", "married", "divorced"))
+
+#str(x)
+
+#print("--------------------------------------------------------------------------")
+#x <- c(0, 1 ,2, 6, 4)
+#x
+#x <- c(x, 5)
+#x
+#y <- c(11,12,13,14)
+#y
+#z <- c(x,y)
+#z
+#z[-1:-3]
+#typeof(x)
+#print("--------------------------------------------------------------------------")
+#?factor
+
+
+print("--------------------------------------------------------------------------")
+# Create the data frame.
+#emp_id <- c (1:5)
+#emp_name <- c("Rick","Dan","Michelle","Ryan","Gary")
+#salary <- c(623.3,515.2,611.0,729.0,843.25)
+#start_date <- as.Date(c("2012-01-01", "2013-09-23", "2014-11-15", "2014-05-11", "2015-03-27"))
+
+#emp.data <- data.frame(emp_id,emp_name,salary,start_date)
+# Print the data frame.			
+#print(emp.data) 
+
+#str(emp.data)
+
+#names(emp.data) <- c("Emp_id", "Emp_name", "Salary", "Start_Date")
+#emp.data <- data.frame(Emp_id=emp_id, Emp_name=emp_name, Salary=salary, Start_Date=start_date)
+
+#print("--------------------------------------------------------------------------")
+#summary(emp.data)
+#print("--------------------------------------------------------------------------")
+
+
+print("--------------------------------------------------------------------------")
+mat1 <- matrix(1:12, 4, 3)
+mat1
+print("--------------------------------------------------------------------------")
+mat2 <- matrix(1:12, 4, 3)
+mat2
+print("SUM -----------------------------------------------------------------")
+mat_sum <- (mat1 + mat2)
+mat_sum
+print("Mul --------------------------------------------------------------------")
+(mat1 * mat2)
+print("--------------------------------------------------------------------------")
+
+print("--------------------------------------------------------------------------")
+
+ln <- "------------------------------------------------------------------------------"
+ln
+country_codes <- c(India="+91", US="+1")
+#country_codes
+#str(country_codes)
+country_codes["India"]
+
+seq(0,100,2)
+
+
+ln
+
+o2f <- 1:5
+o2f
+class(o2f)
+
+ch_o2f <- as.character(o2f)
+class(ch_o2f)
+
+ch_o2f <- c(ch_o2f, "newchar")
+ch_o2f
+class(ch_o2f)
+ln
+num_o2f <- as.numeric(ch_o2f)
+num_o2f
+ch_o2f
+
+--------------------------------------------------------------- 27-06-19 ------------------------------
+ln <- "------------------------------------------------------------------------------"
+ln
+
+murders <-  data.frame(
+    state = c("Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming") ,
+    abb = c("AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"),
+    region = factor(c("South","West","West","South","West","West","Northeast","South","South","South","South","West","West","North Central","North Central","North Central","North Central","South","South","Northeast","South","Northeast","North Central","North Central","South","North Central","West","North Central","West","Northeast","Northeast","West","Northeast","South","North Central","North Central","South","West","Northeast","Northeast","South","North Central","South","South","West","Northeast","South","West","South","North Central","West")),
+    population = c(4779736, 710231, 6392017, 2915918, 37253956, 5029196, 3574097, 897934, 601723, 19687653, 9920000, 1360301, 1567582, 12830632, 6483802, 3046355, 2853118, 4339367, 4533372, 1328361, 5773552, 6547629, 9883640, 5303925, 2967297, 5988927, 989415, 1826341, 2700551, 1316470, 8791894, 2059179, 19378102, 9535483, 672591, 11536504, 3751351, 3831074, 12702379, 1052567, 4625364, 814180, 6346105, 25145561, 2763885, 625741, 8001024, 6724540, 1852994, 5686986, 563626 ),
+    total = c(135, 19, 232, 93, 1257, 65, 97, 38, 99, 669, 376, 7, 12, 364, 142, 21, 63, 116, 351, 11, 293, 118, 413, 53, 120, 321, 12, 32, 84, 5, 246, 67, 517, 286, 4, 310, 111, 36, 457, 16, 207, 8, 219, 805, 22, 2, 250, 93, 27, 97, 5),
+    stringsAsFactors = FALSE
+)
+ln
+
+
+
+
+
+sort(murders$total)
+ln
+murders$state[1:5]
+ind <- order(murders$total)
+ln
+murders$state[ind]
+--------------------------------------------------------------- 27-06-19 ------------------------------
